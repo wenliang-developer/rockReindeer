@@ -39,7 +39,7 @@ function Reindeer(container){
     container.addEventListener('mousedown', this.eventHandleList['start']);
 }
 // 让我们一起摇摆 ╮(╯▽╰)╭
-Reindeer.prototype.swing = function(degrees){
+Reindeer.prototype.rock = function(degrees){
     //获取弧度
     var angle = !degrees ? 0 : ((Math.abs(degrees) / degrees) * Math.min(this.maxDegrees, Math.abs(degrees))) * Math.PI / 180;
 
@@ -96,7 +96,7 @@ Reindeer.prototype.moveGesture = function (e) {
     console.log('%cFollowing Gestures','color:#3F51B5');
     this.swingCurrentDegress = this.calculateOffsetDegrees(e);
     var deviationDegrees = this.swingCurrentDegress - this.swingStartDegrees;
-    this.swing(deviationDegrees);
+    this.rock(deviationDegrees);
 };
 // 手势结束 handle
 Reindeer.prototype.endGesture = function (e) {
@@ -125,7 +125,7 @@ Reindeer.prototype.endGesture = function (e) {
             //标记为 驯鹿正在摇摆
             that.isSwing = true
         }, onUpdate: function () {
-            that.swing(o.degress);
+            that.rock(o.degress);
         }, onComplete: function () {
             that.isSwing = false;
             // 重置移动手势时的当前摇摆角度，
