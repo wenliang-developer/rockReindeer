@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <svg id="reindeer" class="reindeer" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-30 0 160 100" preserveAspectRatio="xMidYMax meet" version="1.1">
+        <g class="other">
+            <g class="buckhorn-right">
+                <path stroke="#492D15" fill="none" stroke-width="3.34500003" stroke-linecap="round" d="m 42.566606,22.210021 c -4.851885,7.191707 1.520414,11.918157 1.520414,11.918157"/>
+                <path stroke="#492D15" stroke-width="2.94000006" stroke-linecap="round"  d="m 39.879688,28.727436 c -3.562098,0.07416 -4.064285,-3.555483 -4.064285,-3.555483"/>
+            </g>
+            <g class="buckhorn-left">
+                <path stroke="#492D15" fill="none" stroke-width="3.34500003" stroke-linecap="round" d="m 57.429287,22.181611 c 4.851885,7.191707 -1.520414,11.918157 -1.520414,11.918157"/>
+                <path stroke="#492D15" stroke-width="2.94000006" stroke-linecap="round" d="m 60.116205,28.699026 c 3.562098,0.07416 4.064285,-3.555483 4.064285,-3.555483"/>
+            </g>
+            <circle class="eye-left" cx="48.200001" cy="37.799999" r="1.4"/>
+            <circle class="eye-right" cx="51.799999" cy="37.799999" r="1.4"/>
+            <circle class="nose" cx="50" cy="48.199997" r="8" fill="#e5172e"/>
+            <path class="mouth" stroke="#e5172e" stroke-width="1.10000002" stroke-linecap="round" d="m 49.5,58.4 1,0"/>
+            <path class="ear-left" fill="#E0B455" d="M 40.874443,35.288871 32.61449,32.212679 c -1.419903,3.478451 2.48209,8.081656 8.259953,3.076192 z"/>
+            <path class="ear-right" fill="#E0B455" d="m 58.870131,35.241419 8.259953,-3.076192 c 1.419903,3.478451 -2.48209,8.081656 -8.259953,3.076192 z"/>
+        </g>
+        <path class="body" fill="none" stroke="#e0b455" stroke-width="35.90000153" stroke-linecap="round" d="M50,120 Q 50 85 50 50"/>
+        <g class="other">
+            <g class="buckhorn-right" opacity="0">
+                <path stroke="#492D15" fill="none" stroke-width="3.34500003" stroke-linecap="round" d="m 42.566606,22.210021 c -4.851885,7.191707 1.520414,11.918157 1.520414,11.918157"/>
+                <path stroke="#492D15" stroke-width="2.94000006" stroke-linecap="round"  d="m 39.879688,28.727436 c -3.562098,0.07416 -4.064285,-3.555483 -4.064285,-3.555483"/>
+            </g>
+            <g class="buckhorn-left" opacity="0">
+                <path stroke="#492D15" fill="none" stroke-width="3.34500003" stroke-linecap="round" d="m 57.429287,22.181611 c 4.851885,7.191707 -1.520414,11.918157 -1.520414,11.918157"/>
+                <path stroke="#492D15" stroke-width="2.94000006" stroke-linecap="round" d="m 60.116205,28.699026 c 3.562098,0.07416 4.064285,-3.555483 4.064285,-3.555483"/>
+            </g>
+            <circle class="eye-left" cx="48.200001" cy="37.799999" r="1.4"/>
+            <circle class="eye-right" cx="51.799999" cy="37.799999" r="1.4"/>
+            <circle class="nose" cx="50" cy="48.199997" r="8" fill="#e5172e"/>
+            <path class="mouth" stroke="#e5172e" stroke-width="1.10000002" stroke-linecap="round" d="m 49.5,58.4 1,0"/>
+            <path class="ear-left" fill="#E0B455" d="M 40.874443,35.288871 32.61449,32.212679 c -1.419903,3.478451 2.48209,8.081656 8.259953,3.076192 z"/>
+            <path class="ear-right" fill="#E0B455" d="m 58.870131,35.241419 8.259953,-3.076192 c 1.419903,3.478451 -2.48209,8.081656 -8.259953,3.076192 z"/>
+        </g>
+    </svg>
+    <svg class="wait" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid meet">
+        <defs>
+            <pattern id="GPattern" x="0" y="0" width="20" height="20"
+                     patternUnits="userSpaceOnUse"
+                     patternTransform="rotate(35)" >
+                <animateTransform attributeType="xml"
+                                  attributeName="patternTransform"
+                                  type="rotate"
+                                  from="35"
+                                  to="395"
+                                  begin="0"
+                                  dur="160s" repeatCount="indefinite"/>
+                <circle cx="10" cy="10" r="10" stroke="none" fill="yellow">
+                    <animate attributeName="r"
+                             type="xml"
+                             from="1" to="1"
+                             values="1; 10; 1"
+                             begin="0s" dur="2s"
+                             repeatCount="indefinite"
+                            />
+                </circle>
+            </pattern>
+        </defs>
+        <text fill="none" stroke="#F2385A" style="fill: url(#GPattern)" stroke="#fff" stroke-width="4" x="50" y="50%" dy="0.35em" text-anchor="middle">Click me!</text>
+    </svg>
+
+<script src="js/stats.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/Reindeer.js"></script>
+<script>
+
+new Reindeer(document.querySelector('#reindeer'));    
+
+~function(){
+    var vendors = ['webkit', 'moz'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame =
+                window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+    var stats = new Stats();
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.right = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild( stats.domElement );
+
+    function render() {
+        stats.begin();
+        requestAnimationFrame(render);
+        stats.end();
+    }
+    render();
+}();
+</script>
+</body>
+</html>
